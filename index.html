@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mobileFirstApp</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+  <body>
+    <!-- page 1 -->
+    <div data-role="page" id="page1">
+      <div data-role="header">
+        <div data-role="header">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#page1" class="ui-btn-active">Home</a></li>
+              <li><a href="#page2">Weather</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <h2>page 1</h2>
+      </div>
+      <div data-role="footer">
+        <h1>Footer Text</h1>
+      </div>
+    </div>
+
+    <!-- page2 -->
+    <div data-role="page" id="page2">
+      <div data-role="header">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#page1">Home</a></li>
+            <li><a href="#page2" class="ui-btn-active">Weather</a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <h2>page 2</h2>
+        <a href="#dialog">Don't do it</a>
+      </div>
+      <div data-role="footer">
+          <h1>Footer Text</h1>
+      </div>
+    </div>
+
+    <!-- dialog -->
+    <div data-role="page" data-dialog="true" id="dialog">
+      <div data-role="main" class="ui-content">
+        <a href="#page1">What the fuck did you just do</a>
+      </div>
+    </div>
+
+
+  </body>
+</html>
